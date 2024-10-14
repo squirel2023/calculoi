@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cálculo I</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Cálculo I</div>
+      <nav>
+        <ul>
+          <li><a href="#limites">Límites</a></li>
+          <li><a href="#funciones">Funciones</a></li>
+          <li><a href="#derivadas">Derivadas</a></li>
+          <li><a href="#contactos">Contactos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="limites">
+        <h2>Límites</h2>
+        <div class="limites-container">
+          <div class="parrafo">
+            <h3>¿Qué es un límite?</h3>
+            <p>
+              Un límite es el valor que una función "se acerca" a medida que la
+              variable independiente (normalmente "x") se acerca a un cierto
+              valor. Los límites nos ayudan a entender cómo se comporta una
+              función cerca de ese punto, incluso si la función no está definida
+              en ese punto.
+            </p>
+          </div>
+          <div class="parrafo">
+            <h3>Notación de límites</h3>
+            <p>
+              La notación de límites se expresa generalmente como: <br />
+              \( \lim_{{x \to a}} f(x) = L \) <br />
+              Esto se lee como "el límite de \(f(x)\) cuando \(x\) tiende a
+              \(a\) es \(L\)". Aquí, \(a\) es el valor al que se aproxima \(x\)
+              y \(L\) es el valor al que se aproxima \(f(x)\).
+            </p>
+          </div>
+          <div class="parrafo">
+            <h3>Ejemplo de un límite</h3>
+            <p>
+              Considera la función \( f(x) = \frac{{2x + 3}}{x} \). Queremos
+              encontrar el límite de \(f(x)\) cuando \(x\) se aproxima a 2.
+              Calculamos el límite evaluando la función cerca de \(x = 2\):
+              <br />
+              \( \lim_{{x \to 2}} \frac{{2x + 3}}{x} = \frac{{2(2) + 3}}{2} =
+              \frac{7}{2} \) <br />
+              Así, el límite de \(f(x)\) cuando \(x\) tiende a 2 es 3.5.
+            </p>
+          </div>
+          <div class="parrafo">
+            <h3>Importancia de los límites</h3>
+            <p>
+              Los límites son cruciales porque: <br />
+              - Permiten definir la continuidad de las funciones. <br />
+              - Son la base para definir la derivada de una función, que mide la
+              tasa de cambio instantánea. <br />
+              - Ayudan a comprender el comportamiento de las funciones en puntos
+              donde no están definidas.
+            </p>
+          </div>
+          <div class="parrafo">
+            <h3>Tipos de límites</h3>
+            <p>
+              1. **Límites Laterales**: Consideran la aproximación por la
+              izquierda ( \( \lim_{{x \to a^-}} f(x) \) ) y por la derecha ( \(
+              \lim_{{x \to a^+}} f(x) \) ). <br />
+              2. **Límites Infinitos**: Describen el comportamiento de una
+              función a medida que \(x\) se aproxima a infinito o menos
+              infinito. <br />
+              3. **Límites en el Infinito**: Indican cómo se comporta la función
+              cuando sus valores se disparan hacia más o menos infinito.
+            </p>
+          </div>
+          <div class="parrafo">
+            <h3>Conclusión</h3>
+            <p>
+              Comprender los límites es esencial para avanzar en el estudio del
+              cálculo y las matemáticas en general, ya que nos permiten analizar
+              y resolver problemas complejos sobre el cambio y el movimiento.
+            </p>
+          </div>
+        </div>
+
+        <p>
+          Los límites son fundamentales en el estudio del cálculo diferencial e
+          integral. Permiten entender el comportamiento de las funciones cuando
+          las variables se acercan a ciertos valores.
+        </p>
+      </section>
+
+      <section id="funciones">
+        <h2>Funciones</h2>
+        <div class="funciones-container">
+          <div class="parrafo">
+            <h3>¿Qué es una función?</h3>
+            <p>
+              Una función \( f \) es una regla que asigna a cada elemento \( x
+              \) de un conjunto \( X \) (el dominio) exactamente un elemento \(
+              f(x) \) en un conjunto \( Y \) (el codominio). Esto se puede
+              escribir como: <br />
+              \( f: X \rightarrow Y \) <br />
+              Donde \( f(x) \) es la "salida" o "imagen" de \( x \) bajo la
+              función \( f \).
+            </p>
+          </div>
+          <div class="parrafo">
+            <h3>Notación de funciones</h3>
+            <p>
+              La notación más común para una función es \( f(x) \). Aquí, \( x
+              \) es la variable independiente y \( f(x) \) es la variable
+              dependiente.
+            </p>
+          </div>
+          <div class="parrafo">
+            <h3>Ejemplo de una función</h3>
+            <p>
+              Considera la función \( f(x) = x^2 \). Aquí, cada valor de \( x \)
+              en el dominio se eleva al cuadrado para producir \( f(x) \):
+              <br />
+              - Si \( x = 2 \), entonces \( f(2) = 2^2 = 4 \) <br />
+              - Si \( x = -3 \), entonces \( f(-3) = (-3)^2 = 9 \)
+            </p>
+          </div>
+          <div class="parrafo">
+            <h3>Tipos de funciones</h3>
+            <p>
+              1. **Función Lineal**: Tiene la forma \( f(x) = mx + b \), donde
+              \( m \) y \( b \) son constantes. Ejemplo: \( f(x) = 2x + 3 \).
+              <br />
+              2. **Función Cuadrática**: Tiene la forma \( f(x) = ax^2 + bx + c
+              \), donde \( a \), \( b \) y \( c \) son constantes. Ejemplo: \(
+              f(x) = x^2 - 4x + 4 \). <br />
+              3. **Función Exponencial**: Tiene la forma \( f(x) = a^x \), donde
+              \( a \) es una constante positiva. Ejemplo: \( f(x) = 2^x \).
+              <br />
+              4. **Función Logarítmica**: La inversa de una función exponencial,
+              tiene la forma \( f(x) = \log_a(x) \), donde \( a \) es la base.
+              Ejemplo: \( f(x) = \log_2(x) \).
+            </p>
+          </div>
+          <div class="parrafo">
+            <h3>Propiedades de las funciones</h3>
+            <p>
+              - **Dominio**: El conjunto de todos los posibles valores de \( x
+              \) para los cuales la función está definida. <br />
+              - **Rango**: El conjunto de todos los posibles valores de \( f(x)
+              \). <br />
+              - **Inyectiva (uno a uno)**: Cada valor de \( x \) tiene un valor
+              único de \( f(x) \). <br />
+              - **Sobreyectiva (sobre)**: El rango cubre todo el codominio.
+              <br />
+              - **Biyectiva**: Es tanto inyectiva como sobreyectiva.
+            </p>
+          </div>
+          <div class="parrafo">
+            <h3>Importancia de las funciones en el cálculo</h3>
+            <p>
+              Las funciones son cruciales en el cálculo porque nos permiten
+              modelar y analizar relaciones entre variables. En el contexto de
+              Cálculo I, se usan para: <br />
+              - **Derivar**: Encontrar la tasa de cambio instantánea de una
+              función. <br />
+              - **Integrar**: Calcular el área bajo la curva de una función.
+              <br />
+              - **Estudiar el comportamiento**: Analizar cómo cambia una función
+              y sus límites en ciertos puntos.
+            </p>
+          </div>
+        </div>
+
+        <p>
+          Una función es una relación entre un conjunto de entradas y un
+          conjunto de posibles salidas, donde cada entrada está relacionada con
+          exactamente una salida.
+        </p>
+      </section>
+
+      <section id="derivadas">
+        <h2>Derivadas</h2>
+        <p>
+          La derivada de una función mide cómo cambia su valor en respuesta a un
+          cambio en su argumento. Es una herramienta clave para el análisis de
+          funciones y la optimización.
+        </p>
+      </section>
+
+      <section id="contactos">
+        <h2>Contactos</h2>
+        <p>Para más información, puedes contactar al profesor:</p>
+        <div class="contactos-container">
+          <div class="contacto-item">
+            <h3>Email</h3>
+            <p>profesor@universidad.com</p>
+          </div>
+          <div class="contacto-item">
+            <h3>Teléfono</h3>
+            <p>+123 456 7890</p>
+          </div>
+          <div class="contacto-item">
+            <h3>Dirección</h3>
+            <p>Calle Falsa 123, Ciudad Universitaria</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="social-icons">
+        <a href="https://facebook.com"
+          ><img src="icons/face.png" alt="Facebook"
+        /></a>
+        <a href="https://instagram.com"
+          ><img src="icons/inst.png" alt="Instagram"
+        /></a>
+        <a href="https://x.com"><img src="icons/x.png" alt="X" /></a>
+      </div>
+    </footer>
+  </body>
+</html>
